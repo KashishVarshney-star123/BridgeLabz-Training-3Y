@@ -1,40 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Web Architecture Flow Diagram</title>
+    <title>Web Architecture Flow</title>
 </head>
 <body>
 
-  <h2>Web Architecture Flow Diagram</h2>
+    <header>
+        <h1>Basic Web Architecture Flow</h1>
+    </header>
 
-  <svg viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg">
-
-    <!-- Client box -->
-    <rect x="10" y="70" width="130" height="60" fill="#cce5ff" stroke="#333" stroke-width="2"/>
-    <text x="75" y="105" text-anchor="middle" font-size="14">CLIENT</text>
-
-    <!-- API box -->
-    <rect x="200" y="70" width="130" height="60" fill="#d4edda" stroke="#333" stroke-width="2"/>
-    <text x="265" y="100" text-anchor="middle" font-size="14">API</text>
-    <text x="265" y="118" text-anchor="middle" font-size="10">(Backend Logic)</text>
-
-    <!-- Server box -->
-    <rect x="390" y="70" width="130" height="60" fill="#cce5ff" stroke="#333" stroke-width="2"/>
-    <text x="455" y="105" text-anchor="middle" font-size="14">SERVER</text>
-
-    <!-- Database box -->
-    <rect x="560" y="70" width="130" height="60" fill="#ffe5cc" stroke="#333" stroke-width="2"/>
-    <text x="625" y="105" text-anchor="middle" font-size="14">DATABASE</text>
-
-    <!-- Arrows -->
-    <line x1="140" y1="100" x2="200" y2="100" stroke="black" stroke-width="2"/>
-    <line x1="330" y1="100" x2="390" y2="100" stroke="black" stroke-width="2"/>
-    <line x1="520" y1="100" x2="560" y2="100" stroke="black" stroke-width="2"/>
-
-  </svg>
-
-  <p>Flow: Client sends a request → API receives and processes it → Server runs the logic → Database stores/retrieves data → Response travels back the same path to the Client.</p>
+        <table border="1" cellpadding="15">
+            <tr>
+                <th>Client</th>
+                <th></th>
+                <th>API</th>
+                <th></th>
+                <th>Server</th>
+                <th></th>
+                <th>Database</th>
+            </tr>
+            <tr>
+                <td><b>Browser / App</b><br>(User Interface)</td>
+                <td><strong>&#8594;</strong></td>
+                <td><b>Handles Requests</b><br>(Communication Layer)</td>
+                <td><strong>&#8594;</strong></td>
+                <td><b>Backend Logic</b><br>(Processes Data)</td>
+                <td><strong>&#8594;</strong></td>
+                <td><b>Stores Data</b><br>(MySQL, MongoDB, etc.)</td>
+            </tr>
+            <tr>
+                <td colspan="7"><strong><center>&#8592; Response flows back from Database to Server to API to Client &#8592;</center></strong></td>
+            </tr>
+        </table>
 
 </body>
 </html>
