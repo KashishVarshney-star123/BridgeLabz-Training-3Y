@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffe4ec;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    width: 400px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.profile-circle {
+    width: 120px;
+    height: 120px;
+    background-color:#ffe4ec;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    color: #777;
+    font-size: 18px;
+}
+
+h1 {
+    color: #333;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+h3 {
+    color: #555;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.college {
+    color: #777;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.about {
+    color: #666;
+    line-height: 1.7;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #555;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.skills span {
+    color: #2196f3;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+button {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1976d2;
+}
