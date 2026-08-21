@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+.container{
+    border: 1px solid black;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+}
+
+.container a{
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+}
+
+.container a:hover{
+    color: white;
+    background-color: yellowgreen;
+}
+
+.container ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container ul li{
+    font-size: 1.5rem;
+    text-align: center;
+    border-top: 1px solid black;
+}
+
+.links{
+    display: flex;
+    background-color: rgb(163, 163, 226);
+    justify-content: space-around;
+    font-weight: bold;
+    width: 100%;
+    margin: 0;
+}
