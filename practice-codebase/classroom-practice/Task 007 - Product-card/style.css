@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  padding: 10px;           
+  border: 1px solid #f0f0f0;
+}
+
+.image-section {
+  position: relative;
+  background-color: #e8e8e8; 
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: hidden;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #e74c3c;
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.wishlist-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.details-section {
+  padding: 15px 20px 20px 20px;
+}
+
+.category {
+  display: inline-block;
+  background-color: #2e86c1;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 10px;
+  margin-bottom: 10px;
+}
+
+.title {
+  display: inline-block;
+  background-color: #2e86c1;
+  color: white;
+  font-size: 18px;
+  padding: 4px 10px;
+  margin-bottom: 12px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.stars {
+  color: #f1c40f;
+  font-size: 16px;
+}
+
+.reviews {
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.current-price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.old-price {
+  font-size: 16px;
+  color: #95a5a6;
+  text-decoration: line-through;
+}
+
+.add-to-cart {
+  width: 100%;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background-color: #333333;
+}
