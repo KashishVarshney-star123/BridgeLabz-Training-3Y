@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1a5276;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  z-index: 100;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1a5276;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 40px;
+  text-align: center;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.linear-section {
+  background: linear-gradient(to right, #2e86c1, #85c1e9);
+}
+
+.radial-section {
+  background: radial-gradient(circle, #e67e22, #f5cba7);
+  background-attachment: fixed;
+}

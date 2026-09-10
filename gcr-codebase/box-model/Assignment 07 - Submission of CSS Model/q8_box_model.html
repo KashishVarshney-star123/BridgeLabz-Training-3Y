@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Model Exploration</title>
+  <link rel="stylesheet" href="q8_box_model.css">
+</head>
+<body>
+
+  <h1>Understanding the CSS Box Model</h1>
+
+  <div class="demo-container">
+
+    <div class="margin-layer">
+      <p class="label">Margin</p>
+      <div class="border-layer">
+        <p class="label">Border</p>
+        <div class="padding-layer">
+          <p class="label">Padding</p>
+          <div class="content-layer">
+            <p class="label">Content</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="box-sizing-demo">
+    <div class="default-box">default box-sizing<br>(content-box)</div>
+    <div class="border-box">box-sizing: border-box</div>
+  </div>
+
+</body>
+</html>
