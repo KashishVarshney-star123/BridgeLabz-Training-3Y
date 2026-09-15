@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fb;
+}
+
+.text-section {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  color: #1a5276;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: #34495e;
+  line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+  .text-section {
+    padding: 40px 20px;
+  }
+
+  p {
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+  }
+}
