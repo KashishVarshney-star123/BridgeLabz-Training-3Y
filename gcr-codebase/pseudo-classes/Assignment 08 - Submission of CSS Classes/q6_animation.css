@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fb;
+  padding: 60px 40px;
+}
+
+h1 {
+  text-align: center;
+  color: #1a5276;
+  margin-bottom: 50px;
+}
+
+.animation-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.anim-item {
+  text-align: center;
+}
+
+.anim-item p {
+  margin-top: 15px;
+  color: #1a5276;
+  font-weight: bold;
+}
+
+.moving-box {
+  width: 60px;
+  height: 60px;
+  background-color: #2e86c1;
+  border-radius: 8px;
+  animation: moveLeftRight 2s ease-in-out infinite;
+}
+
+@keyframes moveLeftRight {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(80px);
+  }
+}
+
+.bouncing-ball {
+  width: 50px;
+  height: 50px;
+  background-color: #e67e22;
+  border-radius: 50%;
+  animation: bounce 1s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+}
+
+.color-text {
+  font-size: 1.3rem;
+  font-weight: bold;
+  animation: colorChange 3s linear infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #2e86c1;
+  }
+  33% {
+    color: #e67e22;
+  }
+  66% {
+    color: #27ae60;
+  }
+  100% {
+    color: #2e86c1;
+  }
+}

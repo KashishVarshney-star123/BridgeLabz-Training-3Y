@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #d6e4ec, #eaf2f8);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ui-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ui-card h1 {
+  text-align: center;
+  color: #1a5276;
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.search-bar {
+  padding: 10px;
+  border: 2px solid #d6e4ec;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.search-bar:focus {
+  border-color: #2e86c1;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(46, 134, 193, 0.2);
+}
+
+.dropdown {
+  padding: 10px;
+  border: 2px solid #d6e4ec;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.dropdown:focus {
+  border-color: #2e86c1;
+  outline: none;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.ui-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #2e86c1;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.ui-btn:hover {
+  background-color: #1a5276;
+}
+
+.ui-btn.secondary {
+  background-color: #d5d8dc;
+  color: #34495e;
+}
+
+.ui-btn.secondary:hover {
+  background-color: #b6bcc2;
+}
