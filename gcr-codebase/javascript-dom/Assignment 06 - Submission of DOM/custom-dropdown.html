@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Dropdown</title>
+  <link rel="stylesheet" href="custom-dropdown.css">
+</head>
+<body>
+
+  <main class="container">
+    <h1>Custom Dropdown</h1>
+
+    <div id="dropdown" class="dropdown">
+      <button type="button" id="dropdownButton" class="dropdown-button" aria-haspopup="listbox" aria-expanded="false">Select a country</button>
+
+      <ul id="dropdownList" class="dropdown-list" role="listbox">
+        <li class="dropdown-option" role="option" aria-selected="false" data-value="india">India</li>
+        <li class="dropdown-option" role="option" aria-selected="false" data-value="usa">USA</li>
+        <li class="dropdown-option" role="option" aria-selected="false" data-value="canada">Canada</li>
+        <li class="dropdown-option" role="option" aria-selected="false" data-value="germany">Germany</li>
+        <li class="dropdown-option" role="option" aria-selected="false" data-value="japan">Japan</li>
+      </ul>
+    </div>
+
+    <p class="status">Selected value: <strong id="selectedValue">none</strong></p>
+
+    <div id="blockerBox" class="blocker-box">
+      Click here. This box stops bubbling, but the dropdown still closes.
+    </div>
+  </main>
+
+  <script src="custom-dropdown.js"></script>
+</body>
+</html>

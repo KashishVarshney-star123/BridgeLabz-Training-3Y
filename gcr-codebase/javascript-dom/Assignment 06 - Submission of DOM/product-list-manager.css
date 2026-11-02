@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fb;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #1a5276;
+  margin-bottom: 20px;
+}
+
+.add-form {
+  display: flex;
+  gap: 10px;
+}
+
+.add-form input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #d6e4ec;
+  border-radius: 6px;
+}
+
+.add-form input:focus {
+  border-color: #2e86c1;
+  outline: none;
+}
+
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  background-color: #2e86c1;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.message {
+  min-height: 20px;
+  margin: 12px 0;
+  color: green;
+  font-size: 0.9rem;
+}
+
+.message.error {
+  color: red;
+}
+
+.product-list {
+  list-style: none;
+}
+
+.product-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border-bottom: 1px solid #eaf2f8;
+}
+
+.product-name {
+  flex: 1;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.product-item.editing .product-name {
+  background-color: #fdebd0;
+  outline: 2px solid #e67e22;
+}
+
+.edit-btn {
+  background-color: #27ae60;
+}
+
+.delete-btn {
+  background-color: #c0392b;
+}

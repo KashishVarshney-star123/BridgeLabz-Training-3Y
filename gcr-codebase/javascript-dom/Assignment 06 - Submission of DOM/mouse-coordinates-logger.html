@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouse Coordinates Logger</title>
+  <link rel="stylesheet" href="mouse-coordinates-logger.css">
+</head>
+<body>
+
+  <main class="container">
+    <h1>Mouse Coordinates Logger</h1>
+
+    <div class="readout">
+      <p>clientX: <strong id="clientX">-</strong></p>
+      <p>clientY: <strong id="clientY">-</strong></p>
+      <p>Dots dropped: <strong id="dotCount">0</strong></p>
+    </div>
+
+    <div id="trackingBox" class="tracking-box">
+      <span id="hint" class="hint">Move your mouse here. Double-click to drop a dot.</span>
+    </div>
+
+    <button type="button" id="clearButton">Clear dots</button>
+  </main>
+
+  <script src="mouse-coordinates-logger.js"></script>
+</body>
+</html>

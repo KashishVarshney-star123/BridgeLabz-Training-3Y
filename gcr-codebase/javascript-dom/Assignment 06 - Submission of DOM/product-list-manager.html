@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Product List Manager</title>
+  <link rel="stylesheet" href="product-list-manager.css">
+</head>
+<body>
+
+  <main class="container">
+    <h1>Product List Manager</h1>
+
+    <form id="productForm" class="add-form">
+      <input type="text" id="productInput" placeholder="Enter product name" autocomplete="off">
+      <button type="submit">Add</button>
+    </form>
+
+    <p id="message" class="message"></p>
+
+    <ul id="productList" class="product-list"></ul>
+  </main>
+
+  <script src="product-list-manager.js"></script>
+</body>
+</html>

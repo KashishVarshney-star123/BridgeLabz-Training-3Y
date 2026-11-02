@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Step Form</title>
+  <link rel="stylesheet" href="multi-step-form.css">
+</head>
+<body>
+
+  <main class="container">
+    <h1>Registration</h1>
+
+    <div class="progress">
+      <div id="progressBar" class="progress-bar"></div>
+    </div>
+    <p id="stepLabel" class="step-label">Step 1 of 3</p>
+
+    <form id="multiStepForm" novalidate>
+
+      <section class="step active">
+        <label for="name">Name</label>
+        <input type="text" id="name" autocomplete="off">
+        <p id="nameError" class="error"></p>
+      </section>
+
+      <section class="step">
+        <label for="email">Email</label>
+        <input type="text" id="email" autocomplete="off">
+        <p id="emailError" class="error"></p>
+      </section>
+
+      <section class="step">
+        <label for="password">Password</label>
+        <input type="password" id="password">
+        <p id="passwordError" class="error"></p>
+      </section>
+
+      <div class="buttons">
+        <button type="button" id="backButton">Back</button>
+        <button type="submit" id="nextButton">Next</button>
+      </div>
+
+    </form>
+
+    <section id="summary" class="summary hidden">
+      <h2>All steps complete</h2>
+      <ul>
+        <li><strong>Name:</strong> <span id="summaryName"></span></li>
+        <li><strong>Email:</strong> <span id="summaryEmail"></span></li>
+        <li><strong>Password:</strong> <span id="summaryPassword"></span></li>
+      </ul>
+      <button type="button" id="restartButton">Start Over</button>
+    </section>
+  </main>
+
+  <script src="multi-step-form.js"></script>
+</body>
+</html>

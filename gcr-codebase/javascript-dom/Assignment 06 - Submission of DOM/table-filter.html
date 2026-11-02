@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Table Filter</title>
+  <link rel="stylesheet" href="table-filter.css">
+</head>
+<body>
+
+  <main class="container">
+    <h1>Student Records</h1>
+
+    <input type="search" id="searchInput" placeholder="Search by name, branch or CGPA..." autocomplete="off">
+    <p id="resultCount" class="result-count"></p>
+
+    <table id="studentTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Branch</th>
+          <th>CGPA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Aarav Sharma</td><td>CSE</td><td>8.9</td></tr>
+        <tr><td>Priya Singh</td><td>IT</td><td>9.2</td></tr>
+        <tr><td>Rohan Mehta</td><td>ECE</td><td>7.8</td></tr>
+        <tr><td>Neha Gupta</td><td>AI &amp; DS</td><td>9.0</td></tr>
+        <tr><td>Kiran Rao</td><td>CSE</td><td>8.1</td></tr>
+        <tr><td>Sara Khan</td><td>Mechanical</td><td>7.5</td></tr>
+        <tr><td>Amit Verma</td><td>IT</td><td>8.4</td></tr>
+        <tr><td>Isha Jain</td><td>AI &amp; DS</td><td>9.4</td></tr>
+      </tbody>
+    </table>
+
+    <p id="noResults" class="no-results" hidden>No results found</p>
+  </main>
+
+  <script src="table-filter.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theme Switcher</title>
+  <link rel="stylesheet" href="theme-switcher.css">
+</head>
+<body>
+
+  <main class="panel">
+    <h1>Theme Switcher</h1>
+    <p>Choose a theme and watch the whole page change.</p>
+
+    <div class="button-row">
+      <button type="button" class="theme-button" data-theme-value="light">Light</button>
+      <button type="button" class="theme-button" data-theme-value="dark">Dark</button>
+      <button type="button" class="theme-button" data-theme-value="blue">Blue</button>
+    </div>
+
+    <p class="status">Current theme: <strong id="currentTheme"></strong></p>
+  </main>
+
+  <script src="theme-switcher.js"></script>
+</body>
+</html>

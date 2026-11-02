@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery with Modal Preview</title>
+  <link rel="stylesheet" href="image-gallery-modal.css">
+</head>
+<body>
+
+  <main class="container">
+    <h1>Image Gallery</h1>
+
+    <div id="gallery" class="gallery">
+      <img class="gallery-image" src="https://picsum.photos/id/10/400/300" data-full="https://picsum.photos/id/10/1000/750" alt="Gallery photo 1">
+      <img class="gallery-image" src="https://picsum.photos/id/15/400/300" data-full="https://picsum.photos/id/15/1000/750" alt="Gallery photo 2">
+      <img class="gallery-image" src="https://picsum.photos/id/20/400/300" data-full="https://picsum.photos/id/20/1000/750" alt="Gallery photo 3">
+      <img class="gallery-image" src="https://picsum.photos/id/25/400/300" data-full="https://picsum.photos/id/25/1000/750" alt="Gallery photo 4">
+      <img class="gallery-image" src="https://picsum.photos/id/30/400/300" data-full="https://picsum.photos/id/30/1000/750" alt="Gallery photo 5">
+      <img class="gallery-image" src="https://picsum.photos/id/35/400/300" data-full="https://picsum.photos/id/35/1000/750" alt="Gallery photo 6">
+    </div>
+  </main>
+
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-label="Image preview">
+    <div id="modalContent" class="modal-content">
+      <button type="button" id="closeButton" class="close-button" aria-label="Close preview">&times;</button>
+      <img id="modalImage" class="modal-image" alt="">
+      <p id="modalCaption" class="modal-caption"></p>
+    </div>
+  </div>
+
+  <script src="image-gallery-modal.js"></script>
+</body>
+</html>
